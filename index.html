@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>unusual.dev</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="links.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="https://www.tiktok.com/@unusual.dev"><img src="images/icons/tiktok.png"></a>
+        <a href="https://www.instagram.com/unusual.dev/"><img src="images/icons/instagram.png"></a>
+        <a href=""><img src="images/icons/youtube.png"></a>
+        <a href="" style="float:right; padding: 0 10px; padding-top: 25px;">Contact</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>unusual.dev</h1>
+            <p>A list of games/projects that I found unique and unusual and felt like they needed sharing!</p>
+        </header>
+
+        <main>
+            <div class="search">
+                <input type="text" id="search-bar" onkeyup="searchGame()" placeholder="Search.." name="search" autocomplete="off">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <div class="grid-container" id="my-table"></div>
+        </main>
+    </div>
+</body>
+
+<script>
+    var stringToHTML = function (str) {
+        var dom = document.createElement('div');
+        dom.innerHTML = str;
+        return dom.firstElementChild;
+    };
+
+    let shuffledLinks = links
+        .map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
+
+    for (let link of shuffledLinks) {
+        let item = stringToHTML(`
+            <div class="item">
+                <div class="image"><a href="${link.link}"><img src="${link.image}"></a></div>
+                <div class="text">
+                    <h1 id="item-name">${link.name}</h1>
+                    <p>${link.info}</p>
+                    <a href="${link.link}">Play <i class="fa fa-external-link"></i></a><br>
+                    <a href="${link.gameplay}">Gameplay <i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+        `);
+
+        document.getElementsByClassName("grid-container")[0].append(item);
+    }
+
+    var table = document.getElementById("my-table");
+    var items = table.getElementsByClassName("item");
+    var input = document.getElementById("search-bar");
+
+    function searchGame(e) {
+        let filter = input.value.toLowerCase();
+
+        for (let item of items) {
+            let name = item.getElementsByTagName("h1")[0].innerText;
+
+            if (name.toLowerCase().indexOf(filter) > -1)
+                item.style.display = "flex";
+            else
+                item.style.display = "none";
+        }
+    }
+</script>
+
+</html>

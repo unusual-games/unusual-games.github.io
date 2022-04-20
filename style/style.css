@@ -1,0 +1,199 @@
+@font-face {
+    font-family: MyDefault;
+    src: url("BalooTammudu2-Regular.ttf");
+}
+
+* {
+    color: #ffffff;
+    line-height: 20px;
+    font-family: MyDefault;
+    box-sizing: border-box;
+}
+
+h1 {
+    line-height: 25px;
+}
+
+body {
+    margin: 0;
+    background: #1c1a1a;
+}
+
+header {
+    text-align: center;
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.nav > a {
+    float: left;
+    text-align: center;
+    padding: 0px 5px;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 60px;
+}
+
+.nav > a > img {
+    width: 40px;
+    height: auto;
+    padding: 0;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.search {
+    display: table;
+    margin: 20px auto;
+}
+
+.search input {
+    font-family: Arial;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    color: black;
+    border-radius: 5px 0 0 5px;
+    /* z-index: -10; */
+}
+
+.search button {
+    display: block;
+    float: right;
+    font-family: Arial;
+    padding: 6px 10px;
+    margin-top: 8px;
+    background: #303030;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item {
+    background-color: #181818;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    padding: 0 20px;
+    padding-right: 0;
+    border: 1px solid transparent;
+}
+
+.item:hover {
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.item a {
+    color: #c50000;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.item i {
+    color: #c50000;
+    vertical-align: middle;
+}
+
+.item .text {
+    padding: 0 20px;
+    vertical-align: top;
+    height: 230px;
+}
+
+.image>a>img {
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1700px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .image>a>img {
+        width: 25vw;
+    }
+
+    .search button {
+        display: none;
+    }
+
+    .search input {
+        border-radius: 5px;
+    }
+
+    .search {
+        width: 50px
+    }
+
+    .item .text {
+        margin-top: -40px;
+    }
+}
+
+body {
+    background: linear-gradient(-45deg, #36300f, #380d1d, #072d3b, #044209);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
