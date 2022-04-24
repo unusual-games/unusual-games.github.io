@@ -78,6 +78,7 @@
 
     function searchGame(custom = "") {
         let filter = input.value.toLowerCase();
+        filter = filter.replace(/\s+/g, '');
 
         if (custom != "") {
             filter = custom
@@ -86,6 +87,7 @@
 
         for (let item of items) {
             let name = item.getElementsByTagName("h1")[0].innerText;
+            name = name.replace(/\s+/g, '');
 
             if (name.toLowerCase().indexOf(filter) > -1)
                 item.style.display = "flex";
