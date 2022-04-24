@@ -68,8 +68,21 @@
     var items = table.getElementsByClassName("item");
     var input = document.getElementById("search-bar");
 
-    function searchGame(e) {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (urlParams.has('search')) {
+        let search = urlParams.get('search')
+        searchGame(search);
+    }
+
+
+    function searchGame(custom = "") {
         let filter = input.value.toLowerCase();
+
+        if (custom != "") {
+            filter = custom
+            input.value = custom;
+        }
 
         for (let item of items) {
             let name = item.getElementsByTagName("h1")[0].innerText;
