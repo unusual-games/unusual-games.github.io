@@ -43,7 +43,7 @@ var links = [
     },
     {
         "name": "Hole Punch",
-        "info": "A fast paced physics based slicing game.",
+        "info": "A fast paced physics based slicing game. Very satisfying to play.",
         "image": "images/holepunch.png",
         "link": "https://justcamh.itch.io/hole-punch",
         "gameplay": "https://www.youtube.com/watch?v=Cm9WB_m_Nso"
