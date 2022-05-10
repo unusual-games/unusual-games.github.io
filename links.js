@@ -47,5 +47,12 @@ var links = [
         "image": "images/holepunch.png",
         "link": "https://justcamh.itch.io/hole-punch",
         "gameplay": "https://www.youtube.com/watch?v=Cm9WB_m_Nso"
+    },
+    {
+        "name": "Marble Marcher",
+        "info": "A 3D fractal golfing game with insane detail. Needs a good PC though.",
+        "image": "images/marblemarcher.png",
+        "link": "https://codeparade.itch.io/marblemarcher",
+        "gameplay": "https://www.youtube.com/watch?v=FKNuO_2nSVQ"
     }
 ]
