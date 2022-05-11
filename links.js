@@ -54,5 +54,12 @@ var links = [
         "image": "images/marblemarcher.png",
         "link": "https://codeparade.itch.io/marblemarcher",
         "gameplay": "https://www.youtube.com/watch?v=FKNuO_2nSVQ"
+    },
+    {
+        "name": "Space Driftin'",
+        "info": "A endless game about drifting around planets using gravity.",
+        "image": "images/spacedriftin.png",
+        "link": "https://chrisgamedev.github.io/spacedriftin",
+        "gameplay": "https://www.youtube.com/shorts/-9ASu-BM744"
     }
 ]
