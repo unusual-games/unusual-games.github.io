@@ -61,5 +61,12 @@ var links = [
         "image": "images/spacedriftin.png",
         "link": "https://chrisgamedev.github.io/spacedriftin",
         "gameplay": "https://www.youtube.com/shorts/-9ASu-BM744"
+    },
+    {
+        "name": "Karlson 2D",
+        "info": "A 2D game where time moves only when you move. Super cinematic.",
+        "image": "images/karlson2d.png",
+        "link": "https://danidev.itch.io/karlson2d",
+        "gameplay": "https://www.youtube.com/watch?v=zH1UJr6heL0"
     }
 ]
