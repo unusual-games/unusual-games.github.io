@@ -68,5 +68,12 @@ var links = [
         "image": "images/karlson2d.png",
         "link": "https://danidev.itch.io/karlson2d",
         "gameplay": "https://www.youtube.com/watch?v=zH1UJr6heL0"
+    },
+    {
+        "name": "Rift Shift",
+        "info": "A 2D game where time moves only when you move. Super cinematic.",
+        "image": "images/riftshift.png",
+        "link": "https://ihapiece.itch.io/rift-shift",
+        "gameplay": "https://www.youtube.com/watch?v=Gio5zMvYs38"
     }
 ]
