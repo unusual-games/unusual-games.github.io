@@ -81,6 +81,6 @@ var links = [
         "info": "A Non-Euclidean game using a hyperbolic projection. Very trippy.",
         "image": "images/hyperbolica.png",
         "link": "https://ihapiece.itch.io/rift-shift",
-        "gameplay": "https://www.youtube.com/watch?v=VYfWfrk5P7w"
+        "gameplay": "https://www.youtube.com/watch?v=BYp7JDqR8ms"
     }
 ]
