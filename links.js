@@ -75,5 +75,12 @@ var links = [
         "image": "images/riftshift.png",
         "link": "https://ihapiece.itch.io/rift-shift",
         "gameplay": "https://www.youtube.com/watch?v=Gio5zMvYs38"
+    },    ,
+    {
+        "name": "Hyperbolica",
+        "info": "A Non-Euclidean game using a hyperbolic projection. Very trippy.",
+        "image": "images/hyperbolica.png",
+        "link": "https://ihapiece.itch.io/rift-shift",
+        "gameplay": "https://www.youtube.com/watch?v=VYfWfrk5P7w"
     }
 ]
