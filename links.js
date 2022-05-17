@@ -82,5 +82,12 @@ var links = [
         "image": "images/hyperbolica.png",
         "link": "https://ihapiece.itch.io/rift-shift",
         "gameplay": "https://www.youtube.com/watch?v=BYp7JDqR8ms"
+    },
+    {
+        "name": "Powder Game 2",
+        "info": "A satisfying 2d pixel based simulation with so many elements it's crazy.",
+        "image": "images/powdergame2.png",
+        "link": "https://dan-ball.jp/javagame/dust2/",
+        "gameplay": "https://www.youtube.com/watch?v=plTHj1UvtmY"
     }
 ]
