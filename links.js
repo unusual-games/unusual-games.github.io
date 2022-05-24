@@ -89,5 +89,12 @@ var links = [
         "image": "images/powdergame2.png",
         "link": "https://dan-ball.jp/javagame/dust2/",
         "gameplay": "https://www.youtube.com/watch?v=plTHj1UvtmY"
+    },
+    {
+        "name": "4D Miner",
+        "info": "Minecraft with the 4th dimension! Still in beta but pretty cool.",
+        "image": "images/4dminer.png",
+        "link": "https://store.steampowered.com/app/1941640/4D_Miner/",
+        "gameplay": "https://www.youtube.com/watch?v=ohH6iRw2K-4"
     }
 ]
