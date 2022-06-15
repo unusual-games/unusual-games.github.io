@@ -96,5 +96,12 @@ var links = [
         "image": "images/4dminer.png",
         "link": "https://store.steampowered.com/app/1941640/4D_Miner/",
         "gameplay": "https://www.youtube.com/watch?v=ohH6iRw2K-4"
+    },
+    {
+        "name": "Magniflyer",
+        "info": "A trippy zooming game with infinite flying fun and crazy gamemodes. Check it out!",
+        "image": "images/magniflyer.png",
+        "link": "https://chrisgamedev.github.io/magniflyer",
+        "gameplay": "https://www.youtube.com/watch?v=fwlpIloBbXM"
     }
 ]
